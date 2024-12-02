@@ -21,6 +21,14 @@ public class Publisher {
     @JoinColumn(name="publisher_id")
     private Set<Book> books = new HashSet<>();
 
+    public Set<Book> getBooks() {
+        return books;
+    }
+
+    public void setBooks(Set<Book> books) {
+        this.books = books;
+    }
+
     public Long getId() {
         return id;
     }
